@@ -31,16 +31,8 @@ export const endpoints = {
     login: '/api/login',
     register: '/api/auth/register',
   },
-  mail: {
-    list: '/api/mail/list',
-    details: '/api/mail/details',
-    labels: '/api/mail/labels',
-  },
-  post: {
-    list: '/api/post/list',
-    details: '/api/post/details',
-    latest: '/api/post/latest',
-    search: '/api/post/search',
+  dashboard:{
+    catalog: "/api/dashboard/categories"
   },
   product: {
     list: '/api/product/list',

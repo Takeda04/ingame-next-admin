@@ -10,7 +10,7 @@ import ProgressBar from 'src/components/progress-bar';
 import { MotionLazy } from 'src/components/animate/motion-lazy';
 import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 
-import { AuthProvider } from 'src/auth/context/jwt';
+// import { AuthProvider } from 'src/auth/context/jwt';
 
 // ----------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className={primaryFont.className}>
       <body>
-        <AuthProvider>
+        {/* <AuthProvider> */}
           <SettingsProvider
             defaultSettings={{
               themeMode: 'light', // 'light' | 'dark'
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: Props) {
               </MotionLazy>
             </ThemeProvider>
           </SettingsProvider>
-        </AuthProvider>
+        {/* </AuthProvider> */}
       </body>
     </html>
   );

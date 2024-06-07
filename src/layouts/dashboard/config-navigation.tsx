@@ -53,7 +53,7 @@ export function useNavData() {
         items: [
           {
             title: 'Главный',
-            path: paths.dashboard.three,
+            path: paths.dashboard.root,
             icon: ICONS.analytics,
           },
         ],
@@ -69,10 +69,19 @@ export function useNavData() {
             path: paths.dashboard.control.root,
             icon: ICONS.user,
             children: [
-              { title: 'Создать каталог', path: paths.dashboard.control.root },
-              { title: 'Список каталогов', path: paths.dashboard.control.five },
+              { title: 'Создать каталог', path: paths.dashboard.control.new },
+              { title: 'Список каталогов', path: paths.dashboard.control.list },
             ],
           },
+          // {
+          //   title: 'Каталог',
+          //   path: paths.dashboard.control.root,
+          //   icon: ICONS.user,
+          //   children: [
+          //     { title: 'Создать каталог', path: paths.dashboard.control.root },
+          //     { title: 'Список каталогов', path: paths.dashboard.control.list },
+          //   ],
+          // },
         ],
       },
     ],

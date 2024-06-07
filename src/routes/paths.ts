@@ -18,12 +18,11 @@ export const paths = {
   dashboard: {
     root: ROOTS.DASHBOARD,
     one: `${ROOTS.DASHBOARD}/one`,
-    two: `${ROOTS.DASHBOARD}/two`,
-    three: `${ROOTS.DASHBOARD}/three`,
     control: {
       root: `${ROOTS.DASHBOARD}/control`,
-      five: `${ROOTS.DASHBOARD}/control/list-catalog`,
-      six: `${ROOTS.DASHBOARD}/control/six`,
+      new: `${ROOTS.DASHBOARD}/control/create-catalog`,
+      list: `${ROOTS.DASHBOARD}/control/list-catalog`,
+      edit: `${ROOTS.DASHBOARD}/control/edit-catalog`,
     },
   },
 };

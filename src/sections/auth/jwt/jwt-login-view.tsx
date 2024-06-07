@@ -113,7 +113,7 @@ export default function JwtLoginView() {
   );
 
   return (
-    <Stack  sx={{mt: lgUp ? "200px" : "50px"}}>
+    <Stack  sx={{mt: lgUp ? "130px" : "50px"}}>
       {renderHead}
 
       {!!errorMsg && (
