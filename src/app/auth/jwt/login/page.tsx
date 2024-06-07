@@ -3,7 +3,7 @@ import { JwtLoginView } from 'src/sections/auth/jwt';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Jwt: Login',
+  title: 'Ingame.uz: Авторизоваться',
 };
 
 export default function LoginPage() {

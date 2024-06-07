@@ -1,11 +1,11 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import { Typography } from '@mui/material';
 
 import { useMockedUser } from 'src/hooks/use-mocked-user';
 
 import { hideScroll } from 'src/theme/css';
 
-import Logo from 'src/components/logo';
 import { NavSectionMini } from 'src/components/nav-section';
 
 import { NAV } from '../config-layout';
@@ -43,7 +43,12 @@ export default function NavMini() {
           ...hideScroll.x,
         }}
       >
-        <Logo sx={{ mx: 'auto', my: 2 }} />
+        {/* <Logo sx={{ mx: 'auto', my: 2 }} /> */}
+        <Typography>
+          <strong style={{
+            color: "red"
+          }}>Ingame</strong>.uz
+        </Typography>
 
         <NavSectionMini
           data={navData}

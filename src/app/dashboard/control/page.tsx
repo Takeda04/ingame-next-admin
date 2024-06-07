@@ -3,7 +3,7 @@ import FourView from 'src/sections/four/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: Four',
+  title: 'Панель приборов: Создать каталог',
 };
 
 export default function Page() {

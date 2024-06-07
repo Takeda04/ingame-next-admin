@@ -49,12 +49,10 @@ export function useNavData() {
       // OVERVIEW
       // ----------------------------------------------------------------------
       {
-        subheader: 'overview v5.7.0',
+        subheader: 'Статистика',
         items: [
-          { title: 'one', path: paths.dashboard.root, icon: ICONS.dashboard },
-          { title: 'two', path: paths.dashboard.two, icon: ICONS.ecommerce },
           {
-            title: 'three',
+            title: 'Главный',
             path: paths.dashboard.three,
             icon: ICONS.analytics,
           },
@@ -64,16 +62,15 @@ export function useNavData() {
       // MANAGEMENT
       // ----------------------------------------------------------------------
       {
-        subheader: 'management',
+        subheader: 'Управление',
         items: [
           {
-            title: 'user',
-            path: paths.dashboard.group.root,
+            title: 'Каталог',
+            path: paths.dashboard.control.root,
             icon: ICONS.user,
             children: [
-              { title: 'four', path: paths.dashboard.group.root },
-              { title: 'five', path: paths.dashboard.group.five },
-              { title: 'six', path: paths.dashboard.group.six },
+              { title: 'Создать каталог', path: paths.dashboard.control.root },
+              { title: 'Список каталогов', path: paths.dashboard.control.five },
             ],
           },
         ],
