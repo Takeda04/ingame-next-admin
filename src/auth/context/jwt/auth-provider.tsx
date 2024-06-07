@@ -81,10 +81,8 @@ export function AuthProvider({ children }: Props) {
       if (accessToken && isValidToken(accessToken)) {
         setSession(accessToken);
 
-        const res = await axios.get(endpoints.auth.me);
+        const {data} = await axios.get(endpoints.auth.me);
 
-        const data = res.data;
-        
         dispatch({
           type: Types.INITIAL,
           payload: {
